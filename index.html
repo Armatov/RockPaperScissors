@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My</title>
+	<link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+<body>
+
+	<div class="header">
+		<a href="#" class="header_btm">О нас</a>
+		<a href="#" class="header_btm">Игры</a>
+		<ul>
+		<li href="#" class="header_btm2">Камень, Ножници, Бумага></li>
+		<li href="#" class="header_btm2">2048</li>
+		</ul>
+		<a href="#" class="header_btm">Главная</a>
+		<a href="#" class="header_btm">Настойки</a>
+		<a href="#" class="header_btm">Контакты</a>
+	</div>
+	<div class="headerbig">
+		<img src="images/123.jpg" width="100%" height="500">
+		<div class="headerbig11">
+		<p class="headerbigtext">Игра</p>
+		<p class="headerbigtext">[Камень, Ножници, Бумага]</p>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu1">
+			<div class="menu12">
+				<p class="menu12text" id="userpoint">0</p>
+				<p class="menu12text">VS</p>
+				<p class="menu12text" id="botpoint">0</p>
+			</div>
+			<div class="menu13">
+				<div class="user">
+					<img id="user1img" src="images/question.jpg" width="200" height="200">
+					<div class="menu11">
+						<h1>Игрок 1</h1>
+						<div class="menu110">
+							<button id="but1" class="but1" onclick="updateImg(1)">Камень</button>
+							<button id="but2" class="but2" onclick="updateImg(2)">Ножници</button>
+							<button id="but3" class="but3" onclick="updateImg(3)">Бумага</button>
+							<button id="but4" class="but4" onclick="updateImg4()">Начать сначало</button>
+						</div>
+					</div>
+				</div>
+				<div class="vs1">
+					<p id="vs2"></p>
+					<p id="vs3"></p>
+				</div>
+				<div class="bot">
+					<img id="user2img" src="images/question.jpg" width="200" height="200">
+					<div class="menu11">
+						<h1>Игрок 2</h1>
+						<div class="menu110">
+							<button id="but2" class="but2" onclick="updateImg(4)">Случайный</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="/script/script.js"></script>
+</body>
+</html>
